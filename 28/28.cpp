@@ -8,7 +8,7 @@ int main() {
 
     int n;
     cin >> n;
-    int arr[n];
+    int* arr = new int[n]; //int arr[n]; // g++
     for (int i = 0; i < n; i++) {
         arr[i] = rand() % 100;
         cout << arr[i] << " ";
